@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ult3849</title>
+  <meta name="description" content="Download game terjemahan Bahasa Indonesia dari berbagai platform">
+   <meta name="keywords" content="J2ME, GBC, Terjemahan, Jadul,">
+   <meta name="author" content="Ultima">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar" id="navbar">
+    <svg class="menu-icon" onclick="openSidebar()" viewBox="0 0 100 80">
+      <rect width="100" height="15"></rect>
+      <rect y="30" width="100" height="15"></rect>
+      <rect y="60" width="100" height="15"></rect>
+    </svg>
+    <div class="title">Ult3849</div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <span class="closebtn" onclick="closeSidebar()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="j2me.html">J2ME</a>
+    <a href="gbc.html">GBC</a>
+  </div>
+  
+  <!-- Judul -->
+  <h3 class="section-title">Pilih Platform</h3>
+  
+  <!-- Konten -->
+  <div class="container">
+  <a href="j2me.html" class="card">
+  <img src="https://raw.githubusercontent.com/Ult3849/tlproject/refs/heads/main/Gambar/Platform/j2me-logo.png" alt="j2me">
+  <a href="gbc.html" class="card">
+  <img src="https://raw.githubusercontent.com/Ult3849/tlproject/refs/heads/main/Gambar/Platform/gbc-logo.png" alt="gbc">
+</a>
+</div>
+  
+  <!-- Deskripsi -->
+  <div class="container-box">
+  <div class="deskripsi-box">
+    <b>Selamat Datang!</b>
+    <p>Di sini adalah tempat saya membagikan game-game yang saya terjemahkan ke dalam Bahasa Indonesia khususnya dari platform lama.</p>
+  </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Ultima All rights reserved.
+  </footer>
+
+  <script>
+    function openSidebar() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.width = "0";
+    }
+
+    // Ubah background navbar saat scroll
+    window.onscroll = function() {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    // Tahun otomatis
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
