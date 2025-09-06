@@ -88,7 +88,6 @@
 
     /* Card (gambar) */
      .card {
-     border: 1px solid #999;
   position: relative;
   width: 100%;
   max-width: 150px;
