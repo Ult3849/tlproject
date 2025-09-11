@@ -5,9 +5,13 @@ body {
     }
 
     a {
-    display: ;
+    display: block;
     color: #005cff;
     font-weight:bold;
+    }
+
+    header, main, footer {
+    display: block;
     }
     
     header, footer {
