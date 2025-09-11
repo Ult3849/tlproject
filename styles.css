@@ -22,7 +22,6 @@ body {
 
     main {
       background-color: #fff;
-      display: flex;
       padding:5px;
       border-top: 4px solid #00c3ff;
       border-bottom: 4px solid #00c3ff;
